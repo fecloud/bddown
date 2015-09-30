@@ -20,8 +20,8 @@ public final class Log {
 
 	private Log() {
 		try {
-			writer = new FileWriter(new File(System.getProperty("bdcopy.log.file", "bdcopy.log")), true);
-			priority = getPriority(System.getProperty("bdcopy.log.priority", ""));
+			writer = new FileWriter(new File(System.getProperty("bddown.log.file", "bddown.log")), true);
+			priority = getPriority(System.getProperty("bddown.log.priority", ""));
 		} catch (Exception e) {
 		}
 	}
