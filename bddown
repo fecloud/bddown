@@ -15,7 +15,7 @@
 PROG="bddown"
 PROG_PATH="/data/app/$PROG" #::# Not need, but sometimes helpful (if $PROG resides in /opt for example).
 VM_RUN="/data/app/jdk1.8.0_60/bin/java"
-VM_ARGS="-Dbddown.db=$PROG_PATH/resource/$PROG.db -Dbddown.log.file=/var/log/$PROG.log -Dbddown.cookie=$PROG_PATH/resource/cookie.json"
+VM_ARGS="-Dbddown.db=$PROG_PATH/resource/$PROG.db -Dbddown.log.file=/var/log/$PROG.log -Dbddown.cookie=$PROG_PATH/resource/cookie.json -Dservice_port=20000"
 VM_JAR="$PROG_PATH/lib/bddown.jar"
 PROG_ARGS="/来自：iPhone /hdd/杨晓燕Iphone /hdd/tmp"
 MSG_PREFIX=" *"
